@@ -1,0 +1,432 @@
+@import url("https://fonts.googleapis.com/css?family=roboto:200,300,400,500,600,700,800");
+
+/*--------------------*\
+       Typography
+\*--------------------*/
+h1 {
+  font-size: 2.1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-family: 'roboto', sans-serif, regular;
+  font-weight: 500;
+  color: #231f20;
+  color: white;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  line-height: 2.75rem;
+  @media screen and (max-width: 790px) {
+    h1 {
+      font-size: 1.25rem;
+           margin-top: .5rem; } } }
+h2 {
+  font-size: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-family: 'roboto', sans-serif, regular;
+  font-weight: 500;
+  color: #231f20;
+  margin-top: 2.5rem;
+  margin-bottom: 3rem;
+  font-weight: 700;
+  line-height: 2.75rem; }
+
+h3 {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-family: 'roboto', sans-serif, regular;
+  font-weight: 300;
+  color: #231f20;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem; }
+
+p {
+  font-size: 1.15em;
+  text-align: left;
+  font-family: 'roboto', sans-serif, regular;
+  font-weight: 300;
+  color: #231f20;
+  line-height: 1.8rem; }
+
+a {
+  color: #818080;
+  text-decoration: none; }
+
+a:hover {
+  color: gold; }
+
+.scroll-link {
+  display: inline;
+  padding-left: 20px;
+  font-size: 1.1rem;
+  font-family: 'roboto', sans-serif, regular;
+  font-weight: 300;
+  color: #231f20;
+  line-height: 1.25rem; }
+  @media screen and (max-width: 790px) {
+    .scroll-link {
+      font-size: 1.5rem;
+      margin-top: .5rem; } }
+
+.navbar-inverse .navbar-nav > li > a:hover {
+  color: gold; }
+
+.navbar-inverse .navbar-nav > li > a:focus {
+  color: #818080; }
+
+/*--------------------*\
+    Global Elements
+\*--------------------*/
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: #f7f5f5; }
+
+.subtitle {
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 2.5rem; }
+
+.spacer {
+  height: 3rem; }
+  @media screen and (max-width: 790px) {
+    .spacer {
+      height: 0rem; } }
+
+/*--------------------*\
+         Header
+\*--------------------*/
+.header {
+  position: fixed;
+  width: 100%;
+  height: 75px;
+  background-color: #f7f5f5;
+  border-bottom: 1px solid #d7d5d5;
+  z-index: 10; }
+
+.navbar {
+  border: none; }
+
+@media screen and (max-width: 790px) {
+  .nav {
+    position: relative; } }
+
+.navbar-inverse {
+  background-color: #f7f5f5;
+  margin-left: 4%;
+  margin-right: 4%; }
+
+.navbar-nav {
+  display: inline-block;
+  position: relative;
+  padding-top: 12px; }
+  @media (min-width: 790px) {
+    .navbar-nav {
+      float: right; } }
+
+.logo {
+  display: inline-block;
+  position: relative;
+  float: left;
+  max-height: 50px;
+  max-width: 255px; }
+  @media screen and (max-width: 790px) {
+    .logo {
+      display: block;
+      position: relative;
+      margin: auto;
+      float: left;
+      margin-top: .5rem;
+      max-width: 190px; } }
+
+.navbar-brand {
+  padding: 12px; }
+  @media (min-width: 790px) {
+    .navbar-brand {
+      padding-left: 0; } }
+
+ul.menu {
+  display: inline-block;
+  position: relative;
+  float: right;
+  bottom: 5px; }
+  @media screen and (max-width: 790px) {
+    ul.menu {
+      display: none; } }
+
+.navbar-toggle {
+  position: relative;
+  float: right;
+  background-color: transparent; }
+
+.navbar-toggle .icon-bar {
+  width: 35px;
+  height: 4px;
+  margin-top: 12px;
+  color: #231F20; }
+
+.navbar-inverse .navbar-toggle .icon-bar {
+  background-color: #231F20; }
+
+.navbar-inverse .navbar-toggle {
+  border: none; }
+
+.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
+  background-color: transparent; }
+
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+  border: none; }
+  @media screen and (max-width: 790px) {
+    .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+      background-color: #ffffff;
+      padding-bottom: .5rem; } }
+
+/*--------------------*\
+         Hero
+\*--------------------*/
+.hero {
+  position: relative;
+  margin-left: 0px;
+  width: 100%;
+  height: 100vh;
+  background-color: #231F20; }
+
+.hero_img {
+  position: relative;
+  margin-left: 0px;
+  background-image: url("./spacexxx.jpg");
+  /*background-image: url("elm_city_labs/spacexxx.jpg");
+  background-image: url("./spacexxx.jpg");
+  background-image: url("spacexxx.jpg");*/
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: .7;
+  width: 100%;
+  height: 100vh; }
+
+.slogan {
+  position: absolute;
+  bottom: 150px;
+  left: 23%;
+  right: 23%;
+  text-align: center;
+  opacity: 100; }
+  @media screen and (max-width: 790px) {
+    .slogan {
+      left: 10%;
+      right: 10%;
+      bottom: 10%; } }
+
+/*--------------------*\
+         About
+\*--------------------*/
+.about {
+  position: relative;
+  width: 63%;
+  margin: auto;
+  max-width: 900px;
+  padding: 35px;
+  padding-top: 50px;
+  max-width: 600px; }
+  @media screen and (max-width: 790px) {
+    .about {
+      width: 80%; } }
+
+.about_leadin {
+  text-align: center; }
+  @media screen and (max-width: 790px) {
+    .about_leadin {
+      text-align: left; } }
+
+.list {
+  padding-left: 2rem; }
+
+/*--------------------*\
+       Companies  //FIXME section needs cleaning
+\*--------------------*/
+.companies {
+  position: relative;
+  margin: auto;
+  width: 80%;
+  padding-top: 20px; }
+  .companies .project_left {
+    float: none;
+    position: relative;
+    display: inline-block;
+    border: 1px solid #e5e6e5;
+    width: 31%;
+    background-color: white;
+    width: 100%;
+    margin-bottom: 1rem; }
+  .companies .project_center {
+    float: none;
+    position: relative;
+    display: inline-block;
+    border: 1px solid #e5e6e5;
+    width: 31%;
+    background-color: white;
+    width: 100%;
+    margin-bottom: 1rem; }
+  .companies .project_right {
+    float: none;
+    position: relative;
+    display: inline-block;
+    border: 1px solid #e5e6e5;
+    width: 31%;
+    background-color: white;
+    width: 100%;
+    margin-bottom: 1rem;
+    border: 1px solid #f7f5f5; }
+  .companies .co-logo {
+    max-width: 100%;
+    padding-top: 10%;
+    padding-bottom: 10%; }
+  @media screen and (min-width: 790px) {
+    .companies {
+      position: relative;
+      text-align: center;
+      margin: 0 auto 65px;
+      max-width: 900px;
+      padding: 20px; }
+      .companies .project_left {
+        float: left;
+        position: relative;
+        display: inline-block;
+        border: 1px solid #e5e6e5;
+        width: 31%;
+        background-color: white; }
+      .companies .project_center {
+        float: none;
+        position: relative;
+        display: inline-block;
+        border: 1px solid #e5e6e5;
+        width: 31%;
+        background-color: white; }
+      .companies .project_right {
+        float: right;
+        position: relative;
+        display: inline-block;
+        border: 1px solid #e5e6e5;
+        width: 31%;
+        background-color: white;
+        border: 1px solid #f7f5f5; }
+      .companies .co-logo {
+        max-width: 75%;
+        padding-top: 18%;
+        padding-bottom: 18%; } }
+
+/*--------------------*\
+         Team  //FIXME section needs cleaning
+\*--------------------*/
+.team {
+  position: relative;
+  margin: auto;
+  width: 80%;
+  padding-top: 20px;
+  height: auto; }
+  @media screen and (max-width: 790px) {
+    .team {
+      max-width: 400px;
+      margin: 0 auto; } }
+  .team .person_left {
+    float: center;
+    position: relative;
+    display: inline-block;
+    width: 31%;
+    max-width: 400px;
+    margin-bottom: 20px;
+    background-color: white;
+    width: 100%;
+    margin-bottom: 1rem; }
+  .team .person_center {
+    float: center;
+    position: relative;
+    display: inline-block;
+    width: 31%;
+    max-width: 400px;
+    margin-bottom: 20px;
+    background-color: white;
+    width: 100%;
+    margin-bottom: 1rem; }
+  .team .person_right {
+    float: center;
+    position: relative;
+    display: inline-block;
+    width: 31%;
+    max-width: 400px;
+    margin-bottom: 20px;
+    background-color: white;
+    width: 100%;
+    margin-bottom: 1rem; }
+  .team .person {
+    width: 100%;
+    object-fit: contain; }
+  @media screen and (min-width: 790px) {
+    .team {
+      position: relative;
+      text-align: center;
+      margin: 0 auto 65px;
+      max-width: 900px;
+      padding: 20px; }
+      .team .person_left {
+        float: left;
+        position: relative;
+        display: inline-block;
+        width: 31%;
+        max-width: 400px;
+        margin-bottom: 20px;
+        background-color: white; }
+      .team .person_center {
+        float: none;
+        position: relative;
+        display: inline-block;
+        width: 31%;
+        max-width: 400px;
+        margin-bottom: 20px;
+        background-color: white; }
+      .team .person_right {
+        float: right;
+        position: relative;
+        display: inline-block;
+        width: 31%;
+        max-width: 400px;
+        margin-bottom: 20px;
+        background-color: white; } }
+
+.clear {
+  clear: both; }
+
+/*--------------------*\
+         Footer  //Could be cleaned
+\*--------------------*/
+.footer {
+  padding: 1.5rem 0; }
+
+.footer_container {
+  margin: 0 auto;
+  width: 80%;
+  border-top: 1px solid #d7d5d5; }
+
+.co_name {
+  position: relative;
+  float: left;
+  margin: 1.7rem 0; }
+  @media screen and (max-width: 515px) {
+    .co_name {
+      margin: 1rem auto 0; } }
+
+.contact_us {
+  position: relative;
+  float: right;
+  margin: 1.7rem 0; }
+  @media screen and (max-width: 515px) {
+    .contact_us {
+      margin: .8rem auto 1.6rem;
+      float: left; } }
+
+/*# sourceMappingURL=main.css.map */
