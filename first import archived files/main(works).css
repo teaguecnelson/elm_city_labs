@@ -1,27 +1,35 @@
+@import url("https://fonts.googleapis.com/css?family=roboto:200,300,400,500,600,700,800");
+
+/*--------------------*\
+       Typography
+\*--------------------*/
 h1 {
   font-size: 2.1rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
   text-align: center;
-  font-family: 'Titillium Web', sans-serif;
-  font-weight: 200;
+  font-family: 'roboto', sans-serif, regular;
+  font-weight: 500;
   color: #231f20;
   color: white;
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
   font-weight: 600;
-  line-height: 2.75rem; }
-
+  line-height: 2.75rem;
+  @media screen and (max-width: 790px) {
+    h1 {
+      font-size: 1.25rem;
+           margin-top: .5rem; } } }
 h2 {
   font-size: 2rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
   text-align: center;
-  font-family: 'Titillium Web', sans-serif;
-  font-weight: 200;
+  font-family: 'roboto', sans-serif, regular;
+  font-weight: 500;
   color: #231f20;
   margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
+  margin-bottom: 3rem;
   font-weight: 700;
   line-height: 2.75rem; }
 
@@ -30,8 +38,8 @@ h3 {
   margin-top: 1rem;
   margin-bottom: 1rem;
   text-align: center;
-  font-family: 'Titillium Web', sans-serif;
-  font-weight: 200;
+  font-family: 'roboto', sans-serif, regular;
+  font-weight: 300;
   color: #231f20;
   margin-top: 1.5rem;
   margin-bottom: 1.5rem; }
@@ -39,7 +47,7 @@ h3 {
 p {
   font-size: 1.15em;
   text-align: left;
-  font-family: 'Titillium Web', sans-serif;
+  font-family: 'roboto', sans-serif, regular;
   font-weight: 300;
   color: #231f20;
   line-height: 1.8rem; }
@@ -55,7 +63,7 @@ a:hover {
   display: inline;
   padding-left: 20px;
   font-size: 1.1rem;
-  font-family: 'Titillium Web', sans-serif;
+  font-family: 'roboto', sans-serif, regular;
   font-weight: 300;
   color: #231f20;
   line-height: 1.25rem; }
@@ -70,9 +78,8 @@ a:hover {
 .navbar-inverse .navbar-nav > li > a:focus {
   color: #818080; }
 
-/*--------------------*        Mixins
-\*--------------------*/
-/*--------------------*    Global Elements
+/*--------------------*\
+    Global Elements
 \*--------------------*/
 body {
   margin: 0;
@@ -90,7 +97,8 @@ body {
     .spacer {
       height: 0rem; } }
 
-/*--------------------*         Header
+/*--------------------*\
+         Header
 \*--------------------*/
 .header {
   position: fixed;
@@ -125,15 +133,15 @@ body {
   position: relative;
   float: left;
   max-height: 50px;
-  max-width: 285px; }
+  max-width: 255px; }
   @media screen and (max-width: 790px) {
     .logo {
       display: block;
       position: relative;
       margin: auto;
-      float: none;
+      float: left;
       margin-top: .5rem;
-      max-width: 200px; } }
+      max-width: 190px; } }
 
 .navbar-brand {
   padding: 12px; }
@@ -156,7 +164,7 @@ ul.menu {
   background-color: transparent; }
 
 .navbar-toggle .icon-bar {
-  width: 40px;
+  width: 35px;
   height: 4px;
   margin-top: 12px;
   color: #231F20; }
@@ -177,25 +185,29 @@ ul.menu {
       background-color: #ffffff;
       padding-bottom: .5rem; } }
 
-/*--------------------*         Hero
+/*--------------------*\
+         Hero
 \*--------------------*/
 .hero {
   position: relative;
   margin-left: 0px;
   width: 100%;
-  height: 90vh;
+  height: 100vh;
   background-color: #231F20; }
 
 .hero_img {
   position: relative;
   margin-left: 0px;
-  background-image: url("../images/spacexxx.jpg");
+  background-image: url("./spacexxx.jpg");
+  /*background-image: url("elm_city_labs/spacexxx.jpg");
+  background-image: url("./spacexxx.jpg");
+  background-image: url("spacexxx.jpg");*/
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   opacity: .7;
   width: 100%;
-  height: 90vh; }
+  height: 100vh; }
 
 .slogan {
   position: absolute;
@@ -208,28 +220,34 @@ ul.menu {
     .slogan {
       left: 10%;
       right: 10%;
-      bottom: 20%; } }
+      bottom: 10%; } }
 
-/*--------------------*         About
+/*--------------------*\
+         About
 \*--------------------*/
 .about {
   position: relative;
   width: 63%;
   margin: auto;
+  max-width: 900px;
   padding: 35px;
   padding-top: 50px;
-  max-width: 800px; }
+  max-width: 600px; }
   @media screen and (max-width: 790px) {
     .about {
       width: 80%; } }
 
 .about_leadin {
   text-align: center; }
+  @media screen and (max-width: 790px) {
+    .about_leadin {
+      text-align: left; } }
 
 .list {
   padding-left: 2rem; }
 
-/*--------------------*       Companies  //FIXME section needs cleaning
+/*--------------------*\
+       Companies  //FIXME section needs cleaning
 \*--------------------*/
 .companies {
   position: relative;
@@ -302,7 +320,8 @@ ul.menu {
         padding-top: 18%;
         padding-bottom: 18%; } }
 
-/*--------------------*         Team  //FIXME section needs cleaning
+/*--------------------*\
+         Team  //FIXME section needs cleaning
 \*--------------------*/
 .team {
   position: relative;
@@ -382,7 +401,8 @@ ul.menu {
 .clear {
   clear: both; }
 
-/*--------------------*         Footer  //Could be cleaned
+/*--------------------*\
+         Footer  //Could be cleaned
 \*--------------------*/
 .footer {
   padding: 1.5rem 0; }
@@ -408,3 +428,5 @@ ul.menu {
     .contact_us {
       margin: .8rem auto 1.6rem;
       float: left; } }
+
+/*# sourceMappingURL=main.css.map */

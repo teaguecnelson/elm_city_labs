@@ -1,88 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=open+sans:200,300,400,500,600,700,800');
+// Global 
+@import "helpers/variables";
 
-/*--------------------*\
-       Variables
-\*--------------------*/
-$breakpoint: 790px;
-$border: 1px solid #d7d5d5;
-$background-color: green;
-$text-color: #231f20;
-$link-color: #818080;
-
-
-/*--------------------*\
-       Typography
-\*--------------------*/
-@mixin header($size) {
-    font-size: $size;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    text-align: center;
-    font-family:'open sans', sans-serif, regular;
-    font-weight: 200;
-    color: $text-color;
-}
-h1 {
-    @include header(2.1rem);
-    color: white;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-    font-weight: 600;
-    line-height: 2.75rem;
-  }
-h2 {
-    @include header(2rem);
-    margin-top: 2.5rem;
-    margin-bottom: 2.5rem;
-    font-weight: 700;
-    line-height: 2.75rem;
-}
-h3 {
-    @include header(1.5rem);
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-}
-p {
-  font-size: 1.15em;
-  text-align: left;
-  font-family:'open sans', regular;
-  font-weight: 300;
-  color: $text-color;
-  line-height: 1.8rem;
-}
-
-a {
-  color: $link-color;
-  text-decoration: none;
-}
-
-a:hover {
-  color: gold;
-}
-
-.scroll-link {
-    display: inline;
-    padding-left: 20px;
-    font-size: 1.1rem;
-    font-family:'open sans', regular;
-    font-weight: 300;
-    color: $text-color;
-    line-height: 1.25rem;
-
-    @media screen and (max-width: $breakpoint) {
-        font-size: 1.5rem;
-        margin-top: .5rem;
-    }
-}
-
-.navbar-inverse .navbar-nav>li>a:hover {
-  color: gold;
-}
-
-.navbar-inverse .navbar-nav>li>a:focus {
-  color: $link-color;
-}
-
+// Atoms 
+@import "atoms/text";
 
 /*--------------------*\
         Mixins
@@ -255,20 +175,20 @@ ul.menu {
   position: relative;
   margin-left: 0px;
   width: 100%;
-  height: 100vh;
+  height: 90vh;
   background-color: #231F20;
 }
 
 .hero_img {
   position: relative;
   margin-left: 0px;
-  background-image: url("../img/spacexxx.jpg");
+  background-image: url("../images/spacexxx.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   opacity: .7;
   width: 100%;
-  height: 100vh;
+  height: 90vh;
 }
 
 .slogan {
@@ -294,10 +214,9 @@ ul.menu {
   position: relative;
   width: 63%;
   margin: auto;
-  max-width: 900px;
   padding: 35px;
   padding-top: 50px;
-  max-width: 600px;
+  max-width: 800px;
 
   @media screen and (max-width: $breakpoint) {
     width: 80%;
@@ -305,7 +224,7 @@ ul.menu {
 }
 
 .about_leadin {
-  text-align: left;
+  text-align: center;
 }
 
 .list {

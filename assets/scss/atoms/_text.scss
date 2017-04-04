@@ -1,0 +1,69 @@
+@mixin header($size) {
+    font-size: $size;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 200;
+    color: $text-color;
+}
+h1 {
+    @include header(2.1rem);
+    color: white;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    line-height: 2.75rem;
+  }
+h2 {
+    @include header(2rem);
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    font-weight: 700;
+    line-height: 2.75rem;
+}
+h3 {
+    @include header(1.5rem);
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+p {
+  font-size: 1.15em;
+  text-align: left;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 300;
+  color: $text-color;
+  line-height: 1.8rem;
+}
+
+a {
+  color: $link-color;
+  text-decoration: none;
+}
+
+a:hover {
+  color: gold;
+}
+
+.scroll-link {
+    display: inline;
+    padding-left: 20px;
+    font-size: 1.1rem;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 300;
+    color: $text-color;
+    line-height: 1.25rem;
+
+    @media screen and (max-width: $breakpoint) {
+        font-size: 1.5rem;
+        margin-top: .5rem;
+    }
+}
+
+.navbar-inverse .navbar-nav>li>a:hover {
+  color: gold;
+}
+
+.navbar-inverse .navbar-nav>li>a:focus {
+  color: $link-color;
+}
