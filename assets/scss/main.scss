@@ -106,7 +106,7 @@ body {
   position: relative;
   float: left;
   max-height: 50px;
-  max-width: 280px;
+  max-width: 100px;
 
   @media screen and (max-width: $breakpoint) {
     display: block;
