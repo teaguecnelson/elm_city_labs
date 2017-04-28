@@ -106,15 +106,15 @@ body {
   position: relative;
   float: left;
   max-height: 50px;
-  max-width: 100px;
+  max-width: 285px;
 
   @media screen and (max-width: $breakpoint) {
-    display: block;
+    display: inline-block;
     position: relative;
     margin: auto;
     float: none;
     margin-top:.5rem;
-    max-width: 200px;
+    max-width: 100px;
   }
 }
 
