@@ -277,12 +277,12 @@ body {
   max-width: 285px; }
   @media screen and (max-width: 790px) {
     .logo {
-      display: inline-block;
+      display: block;
       position: relative;
       margin: auto;
       float: none;
       margin-top: .5rem;
-      max-width: 100px; } }
+      max-width: 200px; } }
 
 .navbar-brand {
   padding: 12px; }
