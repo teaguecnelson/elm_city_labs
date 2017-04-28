@@ -282,7 +282,7 @@ body {
       margin: auto;
       float: none;
       margin-top: .5rem;
-      max-width: 185px; } }
+      max-width: 195px; } }
 
 .navbar-brand {
   padding: 12px; }
@@ -357,7 +357,11 @@ ul.menu {
     .slogan {
       left: 10%;
       right: 10%;
-      bottom: 6%; } }
+      bottom: 5%; } }
+
+@media screen and (max-width: 790px) {
+  .slogan-txt {
+    font-size: 1.8rem; } }
 
 /*--------------------*         About
 \*--------------------*/

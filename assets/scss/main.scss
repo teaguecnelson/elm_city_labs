@@ -114,7 +114,7 @@ body {
     margin: auto;
     float: none;
     margin-top:.5rem;
-    max-width: 185px;
+    max-width: 195px;
   }
 }
 
@@ -206,7 +206,13 @@ ul.menu {
   @media screen and (max-width: $breakpoint) {
     left: 10%;
     right: 10%;
-    bottom: 6%;
+    bottom: 5%;
+  }
+}
+
+.slogan-txt {
+  @media screen and (max-width: $breakpoint) {
+    font-size: 1.8rem;
   }
 }
 
