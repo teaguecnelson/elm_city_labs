@@ -1,0 +1,35 @@
+.companies {
+  position: relative;
+  margin: auto;
+  width: 80%;
+  padding-top: 20px;
+
+  @include breakpoint($medium) {
+    width: 70%;
+  }
+}
+
+.row {
+  @include makeRow($no-padding:true);
+}
+
+.project-wrapper {
+  @include makeColumn($size:12, $offset:0);
+  @include makeColumn(md, $size:4, $offset:0)
+}
+
+.project {
+  border: 1px solid #e5e6e5;
+  background-color: white;
+  margin: 0rem 0rem 1rem 0rem;
+
+  @include breakpoint($medium) {
+    margin: 0rem 0.15rem 1.75rem 0.15rem;
+  }
+}
+
+.co-logo {
+    max-width: 100%;
+    padding: 5% 0rem;
+}
+

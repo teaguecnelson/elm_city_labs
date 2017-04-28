@@ -1,0 +1,38 @@
+// File Not Being Used
+
+html {
+    font-size: $base-font-size;
+}
+
+body {
+    margin: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    // FIXME: Remove after adding autoprefixer
+    display:  -webkit-flex;
+    -webkit-flex-direction: column;
+    //background-color: $body-background;
+}
+
+code {
+    display: block;
+    margin: 1rem 0;
+    background: $charcoal;
+    color: $white;
+    padding: 2rem;
+}
+
+fieldset {
+    border: none;
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+main {
+    flex: 1;
+}
