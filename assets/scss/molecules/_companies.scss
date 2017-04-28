@@ -9,6 +9,14 @@
   }
 }
 
+.co-title {
+  margin-bottom: 1rem;
+}
+
+.co-subtitle {
+  margin: 1rem 0rem 4rem 0rem;
+}
+
 .row {
   @include makeRow($no-padding:true);
 }

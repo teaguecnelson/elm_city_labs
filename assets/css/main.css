@@ -198,6 +198,12 @@ a:hover {
     .companies {
       width: 70%; } }
 
+.co-title {
+  margin-bottom: 1rem; }
+
+.co-subtitle {
+  margin: 1rem 0rem 4rem 0rem; }
+
 .row {
   padding: 0; }
 
