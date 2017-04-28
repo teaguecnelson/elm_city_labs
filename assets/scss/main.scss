@@ -109,7 +109,7 @@ body {
   max-width: 285px;
 
   @media screen and (max-width: $breakpoint) {
-    display: block;
+    display: inline-block;
     position: relative;
     margin: auto;
     float: none;
